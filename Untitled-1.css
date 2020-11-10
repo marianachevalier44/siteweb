@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color:  #fde4f0;
+    display: flex; /*mets les trucs près les autres*/
+    padding: 20px;
+    box-shadow: 0 0 8px grey;
+
+}
+h1 {
+    padding: .2em;/*marges en general c'est mieux*/
+    font-size: 60px;
+
+}
+h2{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 40px;
+    padding-bottom: 25px;
+    text-shadow: 3px 3px 4px rgba(122, 116, 116, 0.5);
+}
+h1, h2 {
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    font-weight: lighter;
+}
+.header-right {
+    text-align: right;
+    flex: 1 0 auto; /* comment vont se comporter les elements, seulement les enfants de display flex*/
+    font-size: 25px;
+    
+}
+
+.header-right img {
+    width: 50px;
+    padding: 10px;
+}
+
+.header-right-text{
+    font-family: 'Sacramento', cursive;
+}
+
+.header-phone {
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+}
+
+.header-right-phone-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;/* contrôle l'alignement de tous les objets sur l'axe principal.*/
+}
+
+.icons-right {
+    float: right;/* */
+    
+}
+nav svg {
+    padding: 1em;
+}
+
+.hero {
+    height: 400px;
+    background-image: url("./Jaipasdevoituremaquette/écran1440px/2/Passons\ le\ vent\ dans\ les\ cheveux.jpeg");
+    background-position: center;
+}
+
+.avatar{
+    height: 60px;
+    vertical-align: middle;
+}
+
+p{
+max-width: 70ch;/*largeur maximum*/
+margin: auto;
+/*text-shadow: 3px 3px 4px rgba(122, 116, 116, 0.5);*/
+}
+
+.text-rose{
+    background-color: #fedee9;
+    padding-bottom: 40px;/*marge enbas*/
+}
+body{
+    font-family: 'Old Standard TT', serif;
+    
+}
+.spacer{
+    height: 180px;
+    background-image: url("./Jaipasdevoituremaquette/écran1440px/2/Partage\ de\ voiture3.jpg");
+    background-position: center;
+}
+.rectangle-gradient{
+    background-image:linear-gradient(to bottom,  #E4E4E6, #ECDDDD) ;
+    display: flex;
+}
+/*les enfants*/
+.colonne{
+    flex: 1 0 1px;
+    padding: 25px;
+}
+.googlemaps{
+    vertical-align:middle;/*icon au milieu avec le texte*/
+}
+input[type="text"]{ /*juste input de type text */
+    padding: .5em;/*la taille d'un character*/
+}
+.tarifs{
+    background-image: url(./Jaipasdevoituremaquette/écran1440px/2/Partage_de_voiture.png);
+    background-color: #d9cdcc;
+    background-repeat: no-repeat;/*quand l'image est petite, elle se repete*/
+    background-position: center 90px;/* 90px= position de l'image: main*/
+    background-size: 200px; /*taille rectagle*/
+    overflow: hidden;/*cache ce qui depasse*/
+    padding-bottom: 190px;
+
+}
+.tarifs-titre{
+    background-color: #fedee9;
+    box-shadow: 0 0 8px grey;
+    padding: 15px;/*il avait une exception pour tarif titre*/
+    
+}
+
+.colonne-parents{
+    display: flex;
+}
+.colonne-enfants{
+    flex: 1 0 1px;
+    text-align: center;
+
+}
+.contact{
+    background-image:
+        url("./Jaipasdevoituremaquette/écran1440px/2/évaluation\ de\ la\ location\ de\ voiture.png"),
+        linear-gradient(to bottom,  #E4E4E6, #FECCC9);
+    background-position: -65px -80px,0 0 ;/*en negatif car la position est tout au gauche*/
+    background-repeat:no-repeat ;
+    text-align: center;
+    box-shadow: 0 0 8px grey;
+}
+form{
+    text-align: center;
+    margin: auto;
+    width: 600px;
+ 
+}
+
